@@ -1,4 +1,5 @@
 #!/bin/bash
+# Coordinated Hopping
 #Minute Band
 #00 160
 #02 80
