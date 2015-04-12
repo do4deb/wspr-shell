@@ -10,17 +10,6 @@
 #14 15
 #16 12
 #18 10
-#Frequencies
-#160m 1.8366
-# "10m" ) F=281246 ;;
-# "12m" ) F=249246 ;;
-# "15m" ) F=210946 ;;
-# "17m" ) F=181046 ;;
-# "20m" ) F=140956 ;;
-# "30m" ) F=101387 ;;
-# "40m" ) F=70386 ;;
-# "80m" ) F=35926 ;;
-
 RIGCTL="rigctl -m 231 -r /dev/ttyUSB0 -s 9600 -C data_bits=8 -C stop_bits=1 -C serial_handshake=Hardware -C timeout=500.0 -C retry=3.0 -C write_delay=20.0 V VFOA "
 
 declare hops
