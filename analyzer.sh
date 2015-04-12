@@ -1,4 +1,5 @@
 #!/bin/bash
+WSPRD=./k9an-wsprd
 processdir=~/scripts/wspr/processed
 
 if [ -f wsprd.out ];then
@@ -17,7 +18,7 @@ for f in `ls raw/*.wav`;do
 	outfile=$processdir/"$file".out
 
 	echo Processing $base on $wfreq
-	./k9an-wsprd -n -w -f $wfreq $f >> k9an-wsprd.log
+	${WSPRD} -n -w -f $wfreq $f >> k9an-wsprd.log
 
 	mv $f $processdir
 	./spectro.sh $processdir/$base &
